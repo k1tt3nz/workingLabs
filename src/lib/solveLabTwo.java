@@ -5,7 +5,7 @@ public class solveLabTwo {
     private static void printResponse(double response, int x){
         System.out.println("x = " + x +" Ответ: "+ response);
     }
-    public static void outputDataTest(int a, int b, int[] arrX){
+    private static void outputDataTest(int a, int b, int[] arrX){
         System.out.println("a = " + a);
         System.out.println("b = " + b);
 
@@ -103,7 +103,7 @@ public class solveLabTwo {
     }
 
     private static void solve_1(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x <= 3){
             y = b + 2 * Math.log10(Math.abs(x));
         }else{
@@ -114,7 +114,7 @@ public class solveLabTwo {
     }
 
     private static void solve_2(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x > 0){
             y = a + 0.5 * Math.pow(Math.E, x);
         }else{
@@ -125,7 +125,7 @@ public class solveLabTwo {
     }
 
     private static void solve_3(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x <= 0){
             y = 1 / (Math.pow(a,2) + Math.pow(x,2));
         }else{
@@ -136,7 +136,7 @@ public class solveLabTwo {
     }
 
     private static void solve_4(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x <= 2){
             y = (a + Math.pow(x,2)) / b + Math.log10(Math.abs(x) + 1);
         }else{
@@ -147,7 +147,7 @@ public class solveLabTwo {
     }
 
     private static void solve_5(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x <= 1){
             y = a * Math.pow(Math.sin(x),2) + Math.sqrt(x);
         }else{
@@ -158,7 +158,7 @@ public class solveLabTwo {
     }
 
     private static void solve_6(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x <= 1){
             y = a * Math.tan(Math.pow(x,2));
         }else{
@@ -169,7 +169,7 @@ public class solveLabTwo {
     }
 
     private static void solve_7(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x > 3){
             y = (a + x) * Math.atan(a * x);
         }else{
@@ -180,7 +180,7 @@ public class solveLabTwo {
     }
 
     private static void solve_8(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x < 5){
             y = Math.pow(Math.sin(a + x),3);
         }else{
@@ -191,7 +191,7 @@ public class solveLabTwo {
     }
 
     private static void solve_9(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x >= 2){
             y = Math.sqrt(1 + x * Math.sqrt(a * x));
         }else{
@@ -202,7 +202,7 @@ public class solveLabTwo {
     }
 
     private static void solve_10(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x >= 0){
             y = Math.sqrt(Math.pow(Math.E, 2  * x - b)) - 1;
         }else{
@@ -213,7 +213,7 @@ public class solveLabTwo {
     }
 
     private static void solve_11(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x > 4){
             y = Math.sqrt(a + Math.abs(Math.sin(x)));
         }else{
@@ -224,7 +224,7 @@ public class solveLabTwo {
     }
 
     private static void solve_12(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x <= 1){
             y = 2 * Math.pow(x,2) + a * Math.cos(b * x);
         }else{
@@ -235,7 +235,7 @@ public class solveLabTwo {
     }
 
     private static void solve_13(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x >= 2){
             y = Math.log10(a + Math.pow(x,2));
         }else{
@@ -246,7 +246,7 @@ public class solveLabTwo {
     }
 
     private static void solve_14(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x > -1){
             y = 0.2 * Math.pow(x,3) + a;
         }else{
@@ -257,7 +257,7 @@ public class solveLabTwo {
     }
 
     private static void solve_15(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x < 2){
             y = Math.sin(x + Math.pow(a,2));
         }else{
@@ -268,7 +268,7 @@ public class solveLabTwo {
     }
 
     private static void solve_16(int a, int b, int x){
-        double y = 0;
+        double y;
         if(x < 2){
             y = Math.cos(x + Math.pow(a,2));
         }else{
